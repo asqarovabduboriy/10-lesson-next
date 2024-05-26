@@ -1,0 +1,266 @@
+.select_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.small_header_active{
+    position: absolute;
+    top:-100px;
+    transition: .3s;
+    transform: translateY(-50px);
+
+}
+
+
+.select_wrapper select {
+    border: none;
+    outline: none;
+    color: rgb(38, 38, 38);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.small_header {
+    padding: 26px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.icons svg {
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.icons b {
+    color: rgb(38, 38, 38);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.icons p {
+    color: rgb(38, 38, 38);
+    font-family: " Proxima Nova";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    opacity: 0.5;
+}
+
+.line {
+    margin-top: 15px;
+    border-bottom: 1px solid rgb(250, 250, 251);
+}
+
+
+.big_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+
+.big_header ul {
+    display: flex;
+    align-items: center;
+    gap: 97px;
+    list-style: none;
+}
+
+ul li a {
+    color: rgb(38, 38, 38);
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+}
+
+ul li a.active {
+    color: rgb(64, 191, 255);
+}
+.home{
+    display: none;
+}
+
+.account p{
+    display: none;
+}
+.wishlist p{
+    display: none;
+}
+
+.cart p{
+    display: none;
+}
+
+.mobilni_icons{
+    display: flex;
+    gap: 30px;
+}
+
+.hamburger_menu{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+
+
+
+
+.menu_mobilni {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .big_header ul {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .big_header{
+        display: none;
+    }
+
+    .menu_mobilni {
+        display: flex;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+    .small_header {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .line {
+        display: none;
+    }
+
+    .select_wrapper {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .icons b {
+        display: none;
+    }
+
+    .icons p {
+        display: none;
+    }
+
+    .icons{
+        margin: 0 auto;
+    }
+
+
+
+    .mobilni_icons {
+        display: flex;
+        gap: 50px;
+        margin: 0 auto;
+    }
+
+    .home{
+        display:inline;
+        display: grid;
+        grid-gap: 20px;
+    }
+    .account{
+        display: grid;
+    }
+    .account svg{
+        margin: 0 auto;
+    }
+    .wishlist{
+        display: grid;
+    }
+    .wishlist svg{
+        margin: 0 auto;
+    }
+    .cart{
+        display: grid;
+    }
+    .cart svg{
+        margin: 0 auto;
+    }
+    
+    .account p{
+        display: inline;
+    }
+    .wishlist p{
+        display: inline;
+    }
+    
+    .cart p{
+        display: inline;
+    }
+   
+}
+
+@media (max-width: 400px) {
+    .account p{
+        display: none;
+    }
+    .wishlist p{
+        display: none;
+    }
+    
+    .cart p{
+        display: none;
+    }
+    
+    .mobilni_icons{
+        display: flex;
+        gap: 50px;
+    }
+
+    .mobilni_icons svg{
+        font-size: 20px;
+    }
+    .icons{
+        padding-bottom: 20px;
+
+    }
+}
