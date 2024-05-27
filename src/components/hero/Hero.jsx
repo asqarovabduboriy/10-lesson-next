@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="hero_card_two">
           <div className="hero_content">
           <h2>FS - QUILTED MAXI CROSS BAG</h2>
-          <div className="price">
+          <div className="price" style={{marginTop:"220px"}}>
                 <p>$534,33</p>
                 <span>24% Off</span>
           </div>
@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="hero_card_there">
           <div className="hero_content">
           <h2>FS - QUILTED MAXI CROSS BAG</h2>
-          <div className="price">
+          <div className="price" style={{marginTop:"220px"}}>
                 <p>$534,33</p>
                 <span>24% Off</span>
           </div>
