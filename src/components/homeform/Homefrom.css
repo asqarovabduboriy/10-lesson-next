@@ -1,0 +1,34 @@
+.form-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 110px 0 96px 0;
+}
+
+.form-home input {
+    border: 2px solid rgb(188, 221, 254);
+    outline: none;
+    color: rgb(38, 38, 38);
+    font-family: " Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 17px 27px;
+    width: 635px;
+}
+
+.form-home button {
+    background: rgb(64, 191, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding:14px 24px;
+    margin-left:-15px;
+}

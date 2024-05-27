@@ -1,0 +1,110 @@
+footer {
+    background: rgb(188, 221, 254);
+    padding-top: 119px;
+}
+
+.logo_footer p {
+    color: rgb(34, 38, 42);
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 221px;
+    margin-top: 10px;
+}
+
+.folow h2 {
+    color: rgb(34, 38, 42);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.folow p {
+    color: rgb(34, 38, 42);
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 198px;
+    margin-top: 10px;
+}
+
+.text_vontnet_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons_footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icons_footer svg {
+    color: rgb(33, 133, 234);
+}
+
+.contact_us {
+    margin-top: -45px;
+}
+
+.footer_text_one h2 {
+    color: rgb(34, 38, 42);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer_text_one p {
+    width: 152px;
+    color: rgb(38, 38, 38);
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer_text_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.line-footer{
+    margin-top:68px;
+    border: 1px solid rgb(246,247,248);
+    margin-bottom: 33px;
+}
+
+.footer_end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-bottom: 60px;
+}
+
+.footer_end p{
+    color: rgb(193, 200, 206);
+font-family: "Proxima Nova";
+font-size: 14px;
+font-weight: 400;
+line-height: -1px;
+letter-spacing: 0%;
+text-align: left;
+}

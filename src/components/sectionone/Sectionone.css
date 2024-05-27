@@ -18,17 +18,114 @@
     line-height: -1px;
     letter-spacing: 0%;
     text-align: center;
-    width:197px;
+    width: 197px;
 }
 
-.section_one_img{
-    margin-left:50px;
+.section_one_img {
+    margin-left: 50px;
 }
 
-.flex_section{
+.flex_section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.latest_news {
+    margin: 70px 0;
+    text-align: center;
+
+}
+
+.section_two_card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.section_two_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section_two_card h3 {
+    color: rgb(34, 38, 42);
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section_two_card p {
+    color: rgb(34, 38, 42);
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 197px;
+}
+
+.section_one_there {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section_there_text h3 {
+    color: rgb(38, 38, 38);
+    font-family: "Proxima Nova";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 219px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+
+}
+
+.section_there_rating{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0 10px 0;
+}
+
+.section_there_rating svg{
+    color: rgb(255, 193, 7);
+}
+
+.section_one_there h4{
+    color: rgb(255, 72, 88);
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.section_there_img img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.section_three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }

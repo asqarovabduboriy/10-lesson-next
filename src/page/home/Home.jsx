@@ -4,6 +4,7 @@ import Product from "../../components/product/Product";
 import { useGetProductsQuery } from "../../context/products";
 import Main from "../../components/main/Main";
 import SectionOne from "../../components/sectionone/SectionOne";
+import HomeFrom from "../../components/homeform/HomeFrom";
 
 const Home = () => {
  
@@ -14,7 +15,8 @@ const Home = () => {
       <Hero />
       <Product products={data} />
       <Main/>
-      <SectionOne/>
+      <SectionOne data={data}/>
+      <HomeFrom/>
     </>
   );
 };
