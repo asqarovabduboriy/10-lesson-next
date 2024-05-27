@@ -161,4 +161,28 @@
         margin: 0 auto;
     }
 
+    .hero_content{
+        width: 340px;
+    }
+
+    .hero_card .old_price{
+      margin-left:150px ;
+    }
+
+    .hero_card{
+        width: 340px;
+    }
+
+    .hero_card_two{
+        width: 340px;
+    }
+
+    .hero_card_there{
+        width: 340px;
+    }
+
+    .hero_content .old_price{
+       margin-left: 150px;
+    }
+
 }

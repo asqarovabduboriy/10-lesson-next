@@ -129,3 +129,28 @@ text-align: left;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+@media (max-width: 667px) {
+    .flex_section{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .section_two_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .section_two_card{
+        width: 380px;
+    }
+
+    .section_two_card img{
+        width:150px;
+    }
+}

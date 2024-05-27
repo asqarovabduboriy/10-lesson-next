@@ -108,3 +108,35 @@ line-height: -1px;
 letter-spacing: 0%;
 text-align: left;
 }
+
+@media (max-width: 627px) {
+    .text_vontnet_footer{
+        flex-wrap: wrap;
+    }
+
+    .folow{
+        margin-top: 15px;
+    }
+
+    .contact_us{
+        margin: 0 auto;
+    }
+
+    .footer_text_content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer_text_one{
+        margin-top: 15px;
+    }
+
+    .logo_footer{
+        margin: 0 auto;
+    }
+
+    .folow{
+     padding-top: 15px;
+        margin: 0 auto;
+    }
+}
