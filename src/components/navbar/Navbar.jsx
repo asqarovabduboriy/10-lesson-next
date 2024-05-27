@@ -24,7 +24,7 @@ const Navbar = () => {
     <>
       <header>
         <div className="container">
-          <div className={`${active ? "small_header_active" : 'small_header'}`}>
+          <div className={` ${active ? "small_header_active" : 'small_header'} small_header_mobilni` }>
             <div className="select_wrapper">
               <select>
                 <option>En</option>

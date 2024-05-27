@@ -3,7 +3,8 @@
     align-items: center;
     gap: 15px;
 }
-header{
+
+header {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -11,11 +12,8 @@ header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.small_header_active{
-    position: absolute;
-    top:-100px;
-    transition: .3s;
-    transform: translateY(-50px);
+.small_header_active {
+    display: none;
 
 }
 
@@ -106,27 +104,29 @@ ul li a {
 ul li a.active {
     color: rgb(64, 191, 255);
 }
-.home{
+
+.home {
     display: none;
 }
 
-.account p{
-    display: none;
-}
-.wishlist p{
+.account p {
     display: none;
 }
 
-.cart p{
+.wishlist p {
     display: none;
 }
 
-.mobilni_icons{
+.cart p {
+    display: none;
+}
+
+.mobilni_icons {
     display: flex;
     gap: 30px;
 }
 
-.hamburger_menu{
+.hamburger_menu {
     background-color: transparent;
     border: none;
     font-size: 30px;
@@ -147,7 +147,7 @@ ul li a.active {
 }
 
 @media (max-width: 800px) {
-    .big_header{
+    .big_header {
         display: none;
     }
 
@@ -162,12 +162,18 @@ ul li a.active {
 
 @media (max-width: 500px) {
     .small_header {
+        display: none;
+    }
+
+    .small_header_mobilni {
+        display: inline;
         width: 100%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 1);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
     }
 
     .line {
@@ -190,7 +196,7 @@ ul li a.active {
         display: none;
     }
 
-    .icons{
+    .icons {
         margin: 0 auto;
     }
 
@@ -202,64 +208,73 @@ ul li a.active {
         margin: 0 auto;
     }
 
-    .home{
-        display:inline;
+    .home {
+        display: inline;
         display: grid;
         grid-gap: 20px;
     }
-    .account{
+
+    .account {
         display: grid;
     }
-    .account svg{
+
+    .account svg {
         margin: 0 auto;
     }
-    .wishlist{
+
+    .wishlist {
         display: grid;
     }
-    .wishlist svg{
+
+    .wishlist svg {
         margin: 0 auto;
     }
-    .cart{
+
+    .cart {
         display: grid;
     }
-    .cart svg{
+
+    .cart svg {
         margin: 0 auto;
     }
-    
-    .account p{
+
+    .account p {
         display: inline;
     }
-    .wishlist p{
+
+    .wishlist p {
         display: inline;
     }
-    
-    .cart p{
+
+    .cart p {
         display: inline;
     }
-   
+
 }
 
 @media (max-width: 400px) {
-    .account p{
+    .account p {
         display: none;
     }
-    .wishlist p{
+
+    .wishlist p {
         display: none;
     }
-    
-    .cart p{
+
+    .cart p {
         display: none;
     }
-    
-    .mobilni_icons{
+
+    .mobilni_icons {
         display: flex;
         gap: 50px;
     }
 
-    .mobilni_icons svg{
+    .mobilni_icons svg {
         font-size: 20px;
     }
-    .icons{
+
+    .icons {
         padding-bottom: 20px;
 
     }

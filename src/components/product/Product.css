@@ -1,0 +1,137 @@
+.title_product {
+    color: rgb(34, 38, 42);
+    font-family: "Poppins";
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.product_card {
+    width: 300px;
+    border: 3px solid rgb(246, 247, 248);
+    position: relative;
+    padding:10px;
+}
+
+
+
+.product_img img {
+    width: 278px;
+    height: 219px;
+    object-fit: contain;
+}
+
+.product_info h2 {
+    color: rgb(34, 50, 99);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 219px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top:14px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rating svg {
+    color: yellow;
+}
+
+.price_product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+}
+
+.price_product p {
+    color: rgb(64, 191, 255);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.price_product span {
+    color: rgb(144, 152, 177);
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-decoration-line: line-through;
+}
+
+.price_product b {
+    color: rgb(251, 113, 129);
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.icons_product {
+    display: none;
+}
+
+
+.product_img:hover .icons_product {
+    position: absolute;
+    display: block;
+    width: 278px;
+    height: 219px;
+    top: 10px;
+    z-index: 1;
+    background-color: rgb(246, 247, 248);
+    opacity: 0.90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px   ;
+    transition: .3s;
+    border-radius:2px;
+}
+
+.icons_product button{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icons_product button svg {
+    color: rgb(64, 191, 255);
+    font-size:20px;
+}
+
+.product_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
