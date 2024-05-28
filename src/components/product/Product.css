@@ -124,6 +124,10 @@
     text-align: center;
 }
 
+.product_wrapper a{
+    text-decoration: none;
+}
+
 .icons_product button svg {
     color: rgb(64, 191, 255);
     font-size:20px;
