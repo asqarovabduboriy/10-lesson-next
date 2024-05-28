@@ -37,7 +37,7 @@ const Navbar = () => {
               <div className="mobilni_icons">
                 <div className="home">
                   <IoMdHome />
-                  <p className="text_home">Home</p>
+                  <p className="text_home_mobil">Home</p>
                 </div>
                 <div className="account">
                   <FaRegUser />
@@ -52,7 +52,7 @@ const Navbar = () => {
                   <p>Cart</p>
                 </div>
                 <b>items</b>
-                <p>$0.00</p>
+                <p className="zero_item">$0.00</p>
                 <FaSearch className="search" />
               </div>
             </div>

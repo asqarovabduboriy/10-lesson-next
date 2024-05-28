@@ -95,7 +95,7 @@
 
 }
 
-.section_there_rating{
+.section_there_rating {
     text-align: left;
     display: flex;
     align-items: center;
@@ -103,27 +103,27 @@
     margin: 10px 0 10px 0;
 }
 
-.section_there_rating svg{
+.section_there_rating svg {
     color: rgb(255, 193, 7);
 }
 
-.section_one_there h4{
+.section_one_there h4 {
     color: rgb(255, 72, 88);
-font-family: Poppins;
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-letter-spacing: 0%;
-text-align: left;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
-.section_there_img img{
+.section_there_img img {
     width: 150px;
     height: 150px;
     object-fit: contain;
 }
 
-.section_three{
+.section_three {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +131,7 @@ text-align: left;
 }
 
 @media (max-width: 667px) {
-    .flex_section{
+    .flex_section {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
@@ -139,18 +139,58 @@ text-align: left;
 }
 
 @media (max-width: 1150px) {
-    .section_two_wrapper{
+    .section_two_wrapper {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
     }
 
-    .section_two_card{
+    .section_two_card {
         width: 380px;
     }
 
-    .section_two_card img{
-        width:150px;
+    .section_two_card img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section_two_card {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_two_text h3 {
+        text-align: center;
+    }
+
+    .section_two_text p {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .section_two_card {
+        width: 300px;
+    }
+
+    .section_one_there {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section_there_text h3 {
+        text-align: center;
+    }
+
+    .section_there_rating {
+        justify-content: center;
+    }
+
+    .section_there_img {
+        display: flex;
+        justify-content: center;
     }
 }

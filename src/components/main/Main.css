@@ -10,7 +10,7 @@
     padding: 115px 0 70px 0;
 }
 
-.text_vontent_main h2 {
+.text_content_main h2 {
     color: rgb(255, 255, 255);
     font-family: "Poppins";
     font-size: 55px;
@@ -22,7 +22,7 @@
 
 }
 
-.text_vontent_main button {
+.text_content_main button {
     background: transparent;
     border: none;
     color: rgb(255, 255, 255);
@@ -34,9 +34,10 @@
     text-align: left;
     text-decoration: underline;
     text-underline-offset: 10px;
+    margin: 0;
 }
 
-.text_vontent_main p {
+.text_content_main p {
     color: rgb(255, 255, 255);
     font-family: "Poppins";
     font-size: 24px;
@@ -67,7 +68,7 @@
     }
 
     .flex_elment button{
-        margin-left: 230px;
+        margin-left: 130px;
         margin-top: 15px;
     }
 

@@ -192,7 +192,7 @@ ul li a.active {
         display: none;
     }
 
-    .icons p {
+    .icons .zero_item {
         display: none;
     }
 
@@ -209,9 +209,18 @@ ul li a.active {
     }
 
     .home {
-        display: inline;
         display: grid;
         grid-gap: 20px;
+    }
+
+    .home p{
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    .home svg{
+        font-size: 20px;
+        margin: 0 auto;
     }
 
     .account {
@@ -274,9 +283,9 @@ ul li a.active {
         font-size: 20px;
     }
 
-    .icons {
-        padding-bottom: 20px;
 
+    .home p{
+        display: none;
     }
 
 }

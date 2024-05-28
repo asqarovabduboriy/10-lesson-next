@@ -8,7 +8,7 @@ const Main = () => {
       <div className="main">
         <div className="container">
           <div className="flex_elment">
-            <div className="text_vontent_main">
+            <div className="text_content_main">
               <h2>Adidas Men Running Sneakers</h2>
               <p>Performance and design. Taken right to the edge.</p>
               <button>SHOP NOW</button>

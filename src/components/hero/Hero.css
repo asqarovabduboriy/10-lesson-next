@@ -28,7 +28,7 @@
 }
 
 .hero_card {
-    border-radius:5px;
+    border-radius: 5px;
     background-image: url('../../assets/imgs/imageProduct.jpg');
     width: 417px;
     height: 358px;
@@ -37,8 +37,8 @@
     object-fit: contain;
 }
 
-.hero_card_two{
-    border-radius:5px;
+.hero_card_two {
+    border-radius: 5px;
     background-image: url('../../assets/imgs/imageProduct(1).jpg');
     width: 417px;
     height: 358px;
@@ -50,7 +50,7 @@
 
 
 .hero_card_there {
-    border-radius:5px;
+    border-radius: 5px;
     background-image: url('../../assets/imgs/imageProduct(2).jpg');
     width: 417px;
     height: 358px;
@@ -107,13 +107,13 @@
     margin-left: 52px;
 }
 
-.price{
+.price {
     display: flex;
     align-items: center;
     margin: 200px 0 0 52px;
 }
 
-.price span{
+.price span {
     color: rgb(255, 0, 0);
     font-family: "Poppins";
     font-size: 20px;
@@ -123,7 +123,7 @@
     text-align: left;
 }
 
-.price p{
+.price p {
     color: rgb(144, 152, 177);
     font-family: "Poppins";
     font-size: 18px;
@@ -145,11 +145,12 @@
     margin-left: 277px;
 }
 
-.card_warpper{
+.card_warpper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top:-170px;
+    justify-content: center;
+    margin-top: -170px;
 }
 
 
@@ -161,28 +162,52 @@
         margin: 0 auto;
     }
 
-    .hero_content{
+    .hero_content {
         width: 340px;
     }
 
-    .hero_card .old_price{
-      margin-left:150px ;
+    .hero_card .old_price {
+        margin-left: 150px;
     }
 
-    .hero_card{
+    .hero_card {
         width: 340px;
     }
 
-    .hero_card_two{
+    .hero_card_two {
         width: 340px;
     }
 
-    .hero_card_there{
+    .hero_card_there {
         width: 340px;
     }
 
-    .hero_content .old_price{
-       margin-left: 150px;
+    .hero_content .old_price {
+        margin-left: 150px;
     }
 
+    .card_warpper {
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .hero_card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card_warpper{
+        display: none;
+    }
+
+    .banner_title{
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+    }
+    
 }
