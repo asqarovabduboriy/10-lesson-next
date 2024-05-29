@@ -14,6 +14,7 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   let wishlist = useSelector((state) => state.wishslice.value);
+  let cart = useSelector((state) => state.cart.value);
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 100) {
@@ -27,7 +28,11 @@ const Navbar = () => {
     <>
       <header>
         <div className="container">
-          <div className={` ${active ? "small_header_active" : 'small_header'} small_header_mobilni` }>
+          <div
+            className={` ${
+              active ? "small_header_active" : "small_header"
+            } small_header_mobilni`}
+          >
             <div className="select_wrapper">
               <select>
                 <option>En</option>
@@ -39,20 +44,33 @@ const Navbar = () => {
             <div className="icons">
               <div className="mobilni_icons">
                 <div className="home">
-                  <IoMdHome />
+                  <NavLink to="/">
+                  <IoMdHome className="home_icon_mobilni" />
+                  </NavLink>
                   <p className="text_home_mobil">Home</p>
                 </div>
                 <div className="account">
-                  <FaRegUser />
+                   <NavLink to="/admin">
+                    <FaRegUser />
+                  </NavLink>
                   <p>Account</p>
                 </div>
                 <div className="wishlist">
-                  <div className="like"><span>{wishlist.length}</span></div>
-                  <CiHeart />
+                  <div className="like">
+                    <span>{wishlist.length}</span>
+                  </div>
+                 <NavLink to="/wishlist">
+                    <CiHeart />
+                  </NavLink>
                   <p>Wishlist</p>
                 </div>
                 <div className="cart">
-                  <IoCartOutline />
+                  <div className="cart_length">
+                    <span>{cart.length}</span>
+                  </div>
+                  <NavLink to="/cart">
+                    <IoCartOutline />
+                  </NavLink>
                   <p>Cart</p>
                 </div>
                 <b>items</b>
@@ -93,7 +111,7 @@ const Navbar = () => {
             >
               <GiHamburgerMenu />
             </button>
-            <img src={logo} alt="" />
+           <NavLink to="/"> <img src={logo} alt="" /></NavLink>
             <Sidebar close={close} setClose={setClose} />
           </div>
         </div>

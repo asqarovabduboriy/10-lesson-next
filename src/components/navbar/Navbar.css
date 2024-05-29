@@ -131,19 +131,25 @@ ul li a.active {
     border: none;
     font-size: 30px;
 }
-.wishlist{
+
+.wishlist {
     position: relative;
 }
-.wishlist svg{
+
+.wishlist svg {
     font-size: 25px;
+    color: rgb(38, 38, 38);
+    text-align: center;
+    margin: 0 auto;
+
 }
 
-.like{
+.like {
     position: absolute;
     top: -8px;
     left: 12px;
     background-color: red;
-    border-radius:50%;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +157,37 @@ ul li a.active {
     height: 18px;
 }
 
-.like span{
+.cart {
+    position: relative;
+}
+
+.cart_length {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: white;
+}
+
+.cart_length span {
+    color: white;
+    font-size: 15px;
+}
+
+.cart svg {
+    font-size: 25px;
+    color: rgb(38, 38, 38);
+    text-align: center;
+}
+
+.like span {
     color: white;
     font-size: 15px;
 }
@@ -223,6 +259,18 @@ ul li a.active {
         margin: 0 auto;
     }
 
+    .account a {
+        margin: 0 auto;
+        color: rgb(38, 38, 38);
+    }
+
+    .wishlist a {
+        margin: 0 auto;
+    }
+
+    .like {
+        margin-left: 25px;
+    }
 
 
     .mobilni_icons {
@@ -236,14 +284,25 @@ ul li a.active {
         grid-gap: 20px;
     }
 
-    .home p{
+    .home_icon_mobilni {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .home p {
         margin-top: -20px;
         text-align: center;
     }
 
-    .home svg{
+    .account svg {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .home a {
         font-size: 20px;
         margin: 0 auto;
+        color: rgb(38, 38, 38);
     }
 
     .account {
@@ -307,7 +366,7 @@ ul li a.active {
     }
 
 
-    .home p{
+    .home p {
         display: none;
     }
 

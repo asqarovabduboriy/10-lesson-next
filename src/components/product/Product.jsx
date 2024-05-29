@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./Product.css";
 import { FaHeart, FaStar } from "react-icons/fa";
@@ -7,12 +7,15 @@ import { IoCartOutline } from "react-icons/io5";
 import { useSelector,useDispatch } from "react-redux";
 import {toogleLike} from '../../context/wishlistSlice'
 import {addToCart} from '../../context/cartSlice'
+import { ProductContext } from "../../page/home/Home";
 
-const Product = ({ products }) => {
+const Product = () => {
   const usedispatch = useDispatch()
   let wishlist = useSelector((state) => state.wishslice.value);
+
+  const data = useContext(ProductContext);
     
-  let product = products?.map((el) => (
+  let product = data?.map((el) => (
     <div className="product_card" key={el.id}>
       <div className="product_img">
       <img src={el.image} alt="" /> 
