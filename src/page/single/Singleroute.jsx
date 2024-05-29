@@ -22,8 +22,6 @@ const Singleroute = () => {
   const { data, isLoading } = useGetSingleProductQuery(id);
   const dispatch = useDispatch();
   let wishlist = useSelector((state) => state.wishslice.value);
-  const cart = useSelector((state) => state.cart.value);
-
 
   useEffect(() => {
     window.scrollTo(0, 0);

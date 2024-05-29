@@ -82,8 +82,7 @@ const Navbar = () => {
           <div className="line"></div>
           <div className="big_header">
             <div className="logo">
-              <img src={logo} alt="" />
-            </div>
+            <NavLink to="/"> <img src={logo} alt="" /></NavLink>            </div>
             <nav>
               <ul>
                 <li>

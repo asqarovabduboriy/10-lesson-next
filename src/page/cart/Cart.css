@@ -1,0 +1,250 @@
+.cart_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.cart_text_two {
+    display: flex;
+    align-items: center;
+    gap: 115px;
+}
+
+.cart_text p {
+    color: rgb(34, 38, 42);
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.line_cart {
+    width: 100%;
+    height: 2px;
+    background: rgb(246, 247, 248);
+    margin: 23px 0 40px 0;
+}
+
+.close_btn button {
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 104, 117);
+    background-color: rgba(219, 214, 214, 0.1);
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+}
+
+.img_cart {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.img_cart img {
+    width: 130px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.img_cart h2 {
+    color: rgb(38, 38, 38);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 197px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+
+.flex_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart_count {
+    display: flex;
+    align-items: center;
+}
+
+.cart_count button {
+    border: none;
+    cursor: pointer;
+    color: rgb(69, 191, 255);
+    background: rgb(246, 247, 248);
+    width: 40px;
+    height: 45px;
+}
+
+.price_cart {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.price_cart p {
+    width: 80px;
+    color: rgb(38, 38, 38);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.form_cupon {
+    display: flex;
+    align-items: center;
+
+}
+
+.form_cupon input {
+    width: 100%;
+    border: 1px solid rgb(65, 191, 255);
+    outline: none;
+    color: rgb(38, 38, 38);
+    font-family: " Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 19px 20px;
+}
+
+.form_cupon button {
+    background: rgb(64, 191, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 20px 28px;
+    border-radius: 0 4px 4px 0;
+}
+
+.form_cupon button:hover {
+    background: rgb(56, 92, 142);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form_cupon button:active {
+    background: rgb(56, 92, 142);
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.sub_total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub_total p {
+    color: rgb(38, 38, 38);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 23px;
+
+}
+
+.sub_total b {
+    color: rgb(34, 38, 42);
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.btn_cart button {
+    width: 371px;
+    background: rgb(51, 160, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+.btn_cart button:active {
+    background: rgb(56, 92, 142);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    transition: 0.3s;
+    animation: btn 0.3s ease-in-out;
+}
+
+@keyframes btn {
+    0% {
+        transform: scale(0.99);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.total_big {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
+}
+
+@media (max-width: 860px) {
+    .total_big {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .total {
+        margin-top: 15px;
+    }
+
+    .flex_card {
+        display: grid;
+        justify-content: center;
+    }
+
+    .cart_text {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .price_cart{
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .card_add_{
+        width: 100%;
+    }
+    
+}
