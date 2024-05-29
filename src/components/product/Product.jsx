@@ -1,27 +1,30 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Product.css";
-import { FaStar } from "react-icons/fa";
+import { FaHeart, FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
-import { useGetProductsByCategoryQuery } from "../../context/products";
+import { useSelector,useDispatch } from "react-redux";
+import {toogleLike} from '../../context/wishlistSlice'
+import {addToCart} from '../../context/cartSlice'
 
 const Product = ({ products }) => {
+  const usedispatch = useDispatch()
+  let wishlist = useSelector((state) => state.wishslice.value);
     
-//   const [category, setCategory] = useState("all");
-
-//   const { data } = useGetProductsByCategoryQuery(`${category}/`);
-// console.log(data);
-
   let product = products?.map((el) => (
     <div className="product_card" key={el.id}>
       <div className="product_img">
       <img src={el.image} alt="" /> 
         <div className="icons_product">
-          <button>
+          <button onClick={() => usedispatch(toogleLike(el))}>
+          {wishlist.some((item) => item.id === el.id) ? (
+            <FaHeart style={{ color: "red" }} />
+          ) : (
             <CiHeart />
+          )}  
           </button>
-          <button>
+          <button onClick={() => usedispatch(addToCart(el))}>
             <IoCartOutline />
           </button>
         </div>

@@ -8,9 +8,12 @@ import logo from "../../assets/imgs/logo.svg";
 import { NavLink } from "react-router-dom";
 import Sidebar from "../sidebar/Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useSelector } from "react-redux";
 const Navbar = () => {
   const [close, setClose] = useState(false);
   const [active, setActive] = useState(false);
+
+  let wishlist = useSelector((state) => state.wishslice.value);
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 100) {
@@ -44,6 +47,7 @@ const Navbar = () => {
                   <p>Account</p>
                 </div>
                 <div className="wishlist">
+                  <div className="like"><span>{wishlist.length}</span></div>
                   <CiHeart />
                   <p>Wishlist</p>
                 </div>

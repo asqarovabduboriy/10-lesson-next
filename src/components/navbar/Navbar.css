@@ -131,7 +131,30 @@ ul li a.active {
     border: none;
     font-size: 30px;
 }
+.wishlist{
+    position: relative;
+}
+.wishlist svg{
+    font-size: 25px;
+}
 
+.like{
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background-color: red;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+}
+
+.like span{
+    color: white;
+    font-size: 15px;
+}
 
 
 
