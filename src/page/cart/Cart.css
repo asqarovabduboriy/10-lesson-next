@@ -72,6 +72,88 @@
     justify-content: space-between;
 }
 
+.cart_mobilni {
+    box-sizing: border-box;
+    border: 1px solid rgb(235, 240, 255);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    width: 343px;
+    padding: 16px;
+    display: none;
+}
+
+.mobilni__img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobilni__img img{
+    width: 72px;
+    height:72px;
+    object-fit: contain;
+}
+
+.mobilni__img h2{
+    color: rgb(34, 50, 99);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;  
+    width: 258px;
+    height: 36px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  
+}
+
+.mobilni__icons{
+    display: flex;
+}
+
+.mobilni__icons svg{
+    font-size: 20px;
+}
+
+.mobilni__icons button{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    color:red;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.mobilni__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.mobilni__price p{
+    color: rgb(64, 191, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-left: 80px;
+}
+.mobilni__count button{
+    border: none;
+    cursor: pointer;
+    color: rgb(69, 191, 255);
+    background: rgb(246, 247, 248);
+    width: 40px;
+    height: 45px;
+}
+
 .cart_count {
     display: flex;
     align-items: center;
@@ -228,7 +310,19 @@
     }
 
     .flex_card {
-        display: grid;
+       display: none;
+    }
+
+    .cart_mobilni {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .carts_mobilini{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* flex-direction: column; */
         justify-content: center;
     }
 
@@ -238,22 +332,20 @@
 }
 
 @media (max-width: 440px) {
-    .price_cart{
+    .price_cart {
         gap: 10px;
         justify-content: center;
     }
 
-    .card_add_{
-        width: 100%;
-    }
-    
-    .total{
-        width: 100%;
-    }
-    .btn_cart button {
+    .card_add_ {
         width: 100%;
     }
 
-  
-    
+    .total {
+        width: 100%;
+    }
+
+    .btn_cart button {
+        width: 100%;
+    }
 }

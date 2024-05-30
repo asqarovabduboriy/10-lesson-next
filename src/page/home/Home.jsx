@@ -8,11 +8,11 @@ import SectionOne from "../../components/sectionone/SectionOne";
 import HomeFrom from "../../components/homeform/HomeFrom";
 export const ProductContext = createContext();
 const Home = () => {
-  const [limit, setLimit] = useState(1);
+  const [limited, setLimit] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("/");
 
   const { data } = useGetProductsQuery({
-    params: { limit: 4 * limit },
+    params: { limit: 4 * limited },
     path: selectedCategory ?  selectedCategory : "/",
   });
   const { data: category } = useGetProductsByCategoryQuery();
