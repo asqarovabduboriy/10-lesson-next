@@ -1,0 +1,246 @@
+.big_paymnet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.payment {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 11;
+    padding: 30px;
+    animation: payment 0.3s ease-in-out;
+}
+
+@keyframes payment {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.payment_close {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.payment_close button {
+    border: none;
+    cursor: pointer;
+    color: rgb(64, 191, 255);
+    opacity: 0.5;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.payment_title {
+    color: rgb(64, 191, 255);
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.payment_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.payment_input input {
+    border-radius: 10px;
+    background: rgb(223, 222, 222);
+    opacity: 0.3;
+    color: rgb(4, 4, 4);
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2%;
+    text-align: left;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    flex: 1;
+}
+
+.payment_input_two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.payment_input_two textarea {
+    border-radius: 10px;
+    background: rgb(223, 222, 222);
+    opacity: 0.3;
+    color: rgb(153, 153, 153);
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2%;
+    text-align: left;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    margin-left: 25px;
+}
+
+.payment_input_two input {
+    border-radius: 10px;
+    background: rgb(223, 222, 222);
+    opacity: 0.3;
+    color: rgb(153, 153, 153);
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2%;
+    text-align: left;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+}
+
+.payment_checkbox h2 {
+    color: rgb(64, 191, 255);
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.wrapper_checkbox {
+    display: flex;
+    margin-top: 14px;
+    gap: 10px;
+}
+
+.payment_wrapper_checkbox {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(235, 240, 255);
+    padding: 19px 21px;
+    margin-top: 14px;
+}
+
+.wrapper_checkbox svg {
+    color: rgb(64, 191, 255);
+}
+
+.wrapper_checkbox p {
+    color: rgb(34, 50, 99);
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.payment_btn{
+    display: flex;
+    justify-content: center;
+    margin-top:16px;
+}
+
+.payment_btn button{
+    border-radius: 10px;
+background: rgb(51, 160, 255);
+color: rgb(255, 255, 255);
+font-family: "Poppins";
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: center;
+border: none;
+padding:20px 9px;
+width: 100%;
+}
+.payment_input_mobilnni{
+    display: none;
+}
+.input_city{
+    display: none;
+}
+
+@media (max-width: 1060px) {
+    .wrapper_checkbox{
+        display: grid;
+    }
+
+    .input_phone{
+        display: none;
+    }
+
+    .payment_input_mobilnni{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    .payment_input{
+        display: grid;
+        align-items: center;
+    }
+
+    .payment_input_two{
+        display: grid;
+        align-items: center;
+        margin: 0;
+        grid-gap: 20px;
+    }
+
+    .payment_input_two textarea{
+        display: none;
+    }
+
+    .input_city{
+        display: inline;
+    }
+
+  .payment_input_big_wrapper{
+    display: flex;
+    gap: 20px;
+  }
+
+    .payment_checkbox h2{
+        display: none;
+    }
+    .payment{
+        height: max-content;
+    }
+}
+
+@media (max-width: 550px) {
+    
+}

@@ -21,7 +21,7 @@ const Sidebar = ({ setClose, close }) => {
         <nav className="nav_sidebar">
           <ul>
             <li>
-              <NavLink to="/">HOME</NavLink>
+              <NavLink to={"/"}>HOME</NavLink>
             </li>
             <li>
               <NavLink to="/Bags">BAGS</NavLink>

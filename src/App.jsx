@@ -6,6 +6,8 @@ import Footer from './components/footer/Footer'
 import Singleroute from './page/single/Singleroute'
 import Like from './page/Like/Like'
 import Cart from './page/cart/Cart'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
       </Routes>
 
       <Footer/>
+
+      <ToastContainer />
     </>
   )
 }

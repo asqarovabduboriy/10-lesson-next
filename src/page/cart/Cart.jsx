@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Cart.css";
 import { NavLink } from "react-router-dom";
 import { addToCart } from "../../context/cartSlice";
@@ -9,10 +9,12 @@ import {
   decrementCartQuantity,
   removeFromCart,
 } from "../../context/cartSlice";
+import Payment from "../../components/paymentmodal/Payment";
 
 const Cart = () => {
   let dispatch = useDispatch();
   let cart = useSelector((state) => state.cart.value);
+  const [show, setShow] = useState(null);
 
   let total = cart.reduce((acc, el) => acc + el.price * el.quantity, 0);
 
@@ -96,8 +98,9 @@ const Cart = () => {
               <b>${total_price}</b>
             </div>
             <div className="btn_cart">
-              <button>Checkout</button>
+              <button onClick={() => setShow(true)}>Checkout</button>
             </div>
+            {show ? <Payment Setclose={setShow}  /> : null}  
           </div>
         </div>
       </div>
