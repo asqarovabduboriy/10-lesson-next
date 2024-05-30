@@ -4,9 +4,10 @@ export const productApi = api.injectEndpoints({
   endpoints: (build) => ({
     // Get request for all products with limit
     getProducts: build.query({
-      query: (params) => ({
-        url: "/products?limit=8",
-        params,
+      query: (query) => ({
+        url: `/products/${query.path}`,
+        method: "GET",
+        params: query.params
       }),
       providesTags: ["Product"],
     }),
@@ -21,8 +22,9 @@ export const productApi = api.injectEndpoints({
 
     // Get request for products by category
     getProductsByCategory: build.query({
-      query: (category,) => ({
-        url: `/products/category/${category}`,
+      query: (params) => ({
+        url: `/products/categories`,
+        params,
       }),
       providesTags: ["Product"],
     }),

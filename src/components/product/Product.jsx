@@ -8,12 +8,14 @@ import { useSelector,useDispatch } from "react-redux";
 import {toogleLike} from '../../context/wishlistSlice'
 import {addToCart} from '../../context/cartSlice'
 import { ProductContext } from "../../page/home/Home";
+import Ctegory from "../category/Ctegory";
 
 const Product = () => {
   const usedispatch = useDispatch()
   let wishlist = useSelector((state) => state.wishslice.value);
 
-  const data = useContext(ProductContext);
+  const {data} = useContext(ProductContext);
+  const {setLimit} = useContext(ProductContext);
     
   let product = data?.map((el) => (
     <div className="product_card" key={el.id}>
@@ -53,13 +55,16 @@ const Product = () => {
     </div>
   ));
 
+
   return (
     <>
       <div className="container">
         <h2 className="title_product">Best Sellers</h2>
         <div className="select_wrapper">
         </div>
+        <Ctegory/>
         <div className="product_wrapper">{product}</div>
+        <div className="load_more"><button onClick={() => setLimit(p=>p+1)}>Load More</button></div>
       </div>
     </>
   );

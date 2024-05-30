@@ -1,0 +1,6 @@
+.category{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 26px 0 23px 0 ;
+}
