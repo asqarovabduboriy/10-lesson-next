@@ -369,5 +369,8 @@ ul li a.active {
     .home p {
         display: none;
     }
+.like{
+    margin: 0;
+}
 
 }

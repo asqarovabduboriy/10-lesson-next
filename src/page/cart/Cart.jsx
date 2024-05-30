@@ -21,12 +21,12 @@ const Cart = () => {
   let carts = cart?.map((el) => (
     <div className="cart_add" key={el.id}>
       <div className="flex_card">
-        <div className="img_cart">
-          <div className="close_btn">
+      <div className="close_btn">
             <button onClick={() => dispatch(removeFromCart(el))}>
               <IoCloseSharp />
             </button>
           </div>
+        <div className="img_cart">
           <NavLink to={`/product/${el.id}`}>
             <img src={el.image} alt="" />
           </NavLink>
