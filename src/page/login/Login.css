@@ -1,0 +1,57 @@
+
+.login{
+margin:  45px 0;
+}
+.login_form {
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap:20px;
+}
+
+.login_form label {
+    color: rgb(55, 55, 55);
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: -1px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.login_form input {
+    box-sizing: border-box;
+    border: 1px solid rgb(51, 160, 255);
+    border-radius: 0px 3px 3px 0px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.01);
+    background: rgb(255, 255, 255);
+    outline: none;
+    padding:15px 20px;
+}
+
+.login_form button{
+    background-color: rgb(64, 191, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: -1px;
+    letter-spacing: 0px;
+    text-align: center;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 3px;
+}
+
+.login_form button:hover{
+    background-color: rgb(51, 160, 255);
+}
+
+.login_form button:active{
+    background-color: rgb(34, 50, 99);
+    transition: 0.3s;
+    transform: scale(0.9);
+    animation: btn 0.3s ease;
+}

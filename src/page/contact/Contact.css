@@ -1,0 +1,183 @@
+.contact_baner {
+    width: 646px;
+    height: 715px;
+    background-color: rgb(64, 191, 255);
+    padding: 100px 80px;
+
+}
+
+.contact_baner h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    font-size: 48px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.contact_baner p {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: -1px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.flex_contact {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.wrapper_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper_input label {
+    color: rgb(0, 0, 0);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: -1px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: lowercase;
+    margin-top:15px;
+    margin-bottom: 5px;
+}
+
+.wrapper_input input {
+    box-sizing: border-box;
+    border: 1px solid rgb(51, 160, 255);
+    border-radius: 0px 3px 3px 0px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.01);
+    background: rgb(255, 255, 255);
+    width: 510px;
+    padding: 20px 30px;
+    outline:none;
+}
+
+.wrapper_input textarea {
+    box-sizing: border-box;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 0px 3px 3px 0px;
+    outline: none;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.01);
+    background: rgb(255, 255, 255);
+    padding:10px 20px;
+}
+
+.contact_text_p{
+    display: grid;
+    grid-gap:30px;
+    padding-top:56px;
+}
+
+.wrapper_input button{
+    background-color: rgb(64, 191, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: -1px;
+    letter-spacing: 0px;
+    text-align: center;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 3px;
+    width: max-content;
+    margin-top: 15px;
+}
+
+.wrapper_input button:active{
+   transform: scale(0.95);
+   transition: 0.3s;
+   border-radius: 5px 0px 0px 5px;
+   animation: btn 0.3s ease;
+
+}
+
+
+@keyframes btn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 950px) {
+    .contact_baner{
+        padding: 30px ;
+    }
+
+    .contact_baner h2{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 840px) {
+    .contact_baner{
+        padding:15px;
+    }
+
+    .contact_baner h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 820px) {
+    .flex_contact{
+        flex-direction: column;
+    }
+    .contact_baner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact_baner h2{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .contact_text_p p{
+        text-align: center;
+    }
+ 
+}
+
+@media (max-width: 520px) {
+ 
+.wrapper_input input {
+    width: 350px;
+    flex: 1;
+}
+
+.contact_baner{
+    height: max-content;
+    padding: 50px;
+}
+
+.contact_baner h2{
+    font-size: 30px;
+}
+
+.flex_contact{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+}

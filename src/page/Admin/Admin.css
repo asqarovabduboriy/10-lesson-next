@@ -1,0 +1,55 @@
+h1{
+    color: rgb(0, 0, 0);
+font-family: "Poppins";
+font-size: 40px;
+font-weight: 500;
+line-height: 60px;
+letter-spacing: -2%;
+text-align: left;
+margin-top: 76px;
+}
+.text_admin{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 41px;
+    margin-bottom: 575px;
+}
+
+.text_admin p{
+    color: rgb(0, 0, 0);
+font-family: "Poppins";
+font-size: 16px;
+font-weight: 300;
+line-height: 180%;
+letter-spacing: 0.5px;
+text-align: left;
+}
+
+.text_admin button{
+    background: rgb(64, 191, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 16px 70px;
+    border: none;
+    width:max-content;
+    border-radius:10px;
+}
+
+.text_admin button:active{
+    animation: logout 0.3s ease;
+}
+
+@keyframes logout {
+    0% {
+        transform: scale(1);
+    }
+    100% {  
+        transform: scale(1.1);
+    }
+}

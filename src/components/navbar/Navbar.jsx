@@ -50,7 +50,7 @@ const Navbar = () => {
                   <p className="text_home_mobil">Home</p>
                 </div>
                 <div className="account">
-                   <NavLink to="/admin">
+                   <NavLink to="admin">
                     <FaRegUser />
                   </NavLink>
                   <p>Account</p>
