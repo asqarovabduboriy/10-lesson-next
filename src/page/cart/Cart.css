@@ -274,6 +274,19 @@
     margin-top: 24px;
 }
 
+.line_cart_hr{
+    margin: 20px 0 ;
+}
+
+.empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.empty img{
+    width: 100%;
+}
+
 .btn_cart button:active {
     background: rgb(56, 92, 142);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);

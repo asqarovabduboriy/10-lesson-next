@@ -12,6 +12,7 @@ import Contact from './page/contact/Contact'
 import Login  from './page/login/Login'
 import  Aouth from './page/aouth/Aouth'
 import Admin from './page/Admin/Admin'
+import NotFound from './components/Notfound/NotFound.jsx'
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
         <Route path={'/wishlist'}  element={<Like/>}/>
         <Route path={'/cart'}  element={<Cart/>}/>
         <Route path={'/contact'}  element={<Contact/>}/>
-        <Route path={'*'}  element={<h1>404</h1>}/>
+        <Route path={'*'}  element={<NotFound/>}/>
         <Route path='/login' element={<Login/>}/>
           <Route path='/' element={<Aouth/>}>
             <Route path='/admin' element={<Admin/>  }/>

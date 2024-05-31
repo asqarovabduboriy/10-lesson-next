@@ -4,9 +4,7 @@ import { useContext } from "react";
 import { ProductContext } from "../../page/home/Home";
 
 const Ctegory = () => {
-  const { category } = useContext(ProductContext);
-  const { setSelectedCategory } = useContext(ProductContext);
-  const {selectedCategory} = useContext(ProductContext);
+  const { category, setSelectedCategory, selectedCategory} = useContext(ProductContext);
 
 
   let categories = category?.map((el) => (

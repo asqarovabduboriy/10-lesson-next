@@ -10,16 +10,23 @@ export const ProductContext = createContext();
 const Home = () => {
   const [limited, setLimit] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("/");
-
-  const { data } = useGetProductsQuery({
-    params: { limit: 4 * limited },
-    path: selectedCategory ?  selectedCategory : "/",
-  });
+  let url = selectedCategory ? selectedCategory : "/"
+  const { data, isLoading } = useGetProductsQuery({params: { limit: 4 * limited }, path: url,  });
   const { data: category } = useGetProductsByCategoryQuery();
 
   return (
     <>
-      <ProductContext.Provider value={{ data, category, setSelectedCategory,selectedCategory,setLimit}}>
+      <ProductContext.Provider
+        value={{
+          data, 
+          isLoading,
+          category,
+          setSelectedCategory,
+          selectedCategory,
+          setLimit,
+         
+        }}
+      >
         <Hero />
         <Product />
         <Main />

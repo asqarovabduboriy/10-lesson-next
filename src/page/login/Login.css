@@ -55,3 +55,9 @@ margin:  45px 0;
     transform: scale(0.9);
     animation: btn 0.3s ease;
 }
+
+@media (max-width: 660px) {
+    .login_form{
+        width: 90%;
+    }
+}

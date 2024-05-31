@@ -4,13 +4,23 @@ export const productApi = api.injectEndpoints({
   endpoints: (build) => ({
     // Get request for all products with limit
     getProducts: build.query({
-      query: (query) => ({
-        url: `/products/${query.path}`,
-        method: "GET",
-        params: query.params
-      }),
+      query: (query) => {
+        if (!query || !query.path) {
+          return {
+            url: '/products',
+            method: 'GET',
+            params: {}
+          };
+        }
+        return {
+          url: `/products/${query.path}`,
+          method: 'GET',
+          params: query.params
+        };
+      },
       providesTags: ["Product"],
     }),
+    
 
     // Get request for a single product by ID
     getSingleProduct: build.query({

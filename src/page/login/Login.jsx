@@ -21,7 +21,9 @@ const Login = () => {
     } else if (isError) {
       toast.error('Xatolik');
     }
-  }, [isSuccess, isError, data, navigate]);
+
+    window.scrollTo(0, 0);
+  }, [isSuccess, isError, data, navigate,window.scrollY]);
 
 
   const handleSubmit = (e) => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Like.css";
 import { useDispatch, useSelector } from "react-redux";
 import { toogleLike } from "../../context/wishlistSlice";
@@ -7,10 +7,15 @@ import { FaHeart, FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
+import empty from '../../assets/imgs/image copy.png'
 
 const Like = () => {
   const dispatch = useDispatch();
   let like = useSelector((state) => state.wishslice.value);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [window.scrollY]);
 
   let likes = like?.map((el) => (
     <div className="product_card" key={el.id}>
@@ -53,7 +58,8 @@ const Like = () => {
   return (
     <>
       <div className="container">
-      <div className="product_wrapper wrapper_like">{likes}</div>
+        <h1 style={{ textAlign: "center",margin:'20px' }}>Wishlist</h1>
+      <div className="product_wrapper wrapper_like">{likes.length > 0 ? likes : <div className="empty"> <img src={empty} alt="" /> </div> }</div>
       </div>
     </>
   );

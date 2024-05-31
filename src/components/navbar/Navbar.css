@@ -126,6 +126,10 @@ ul li a.active {
     gap: 30px;
 }
 
+.account svg{
+    color: rgb(38, 38, 38);
+    font-size: 20px;
+}
 .hamburger_menu {
     background-color: transparent;
     border: none;

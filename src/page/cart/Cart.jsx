@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Cart.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,6 +12,7 @@ import {
 } from "../../context/cartSlice";
 import Payment from "../../components/paymentmodal/Payment";
 import { FaHeart } from "react-icons/fa6";
+import empty from '../../assets/imgs/image.png'
 
 const Cart = () => {
   let dispatch = useDispatch();
@@ -22,6 +23,10 @@ const Cart = () => {
   let total = cart.reduce((acc, el) => acc + el.price * el.quantity, 0);
 
   let total_price = total.toFixed(2);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [window.scrollY]);
 
   let carts = cart?.map((el, i) => (
     <React.Fragment key={el.id}>
@@ -60,7 +65,7 @@ const Cart = () => {
           </div>
         </div>
   
-        <hr />
+        <hr className="line_cart_hr" />
       </div>
   
       <div className="cart_mobilni" key={`mobile-${el.id}`}>
@@ -71,7 +76,7 @@ const Cart = () => {
             </NavLink>
             <h2 title={el.title}>{el.title}</h2>
             <div className="mobilni__icons">
-              <button onClick={() => dispatch(toggleLike(el))}>
+              <button onClick={() => dispatch(toogleLike(el))}>
                 {wishlist.some((item) => item.id === el.id) ? (
                   <FaHeart style={{ color: "red" }} />
                 ) : (
@@ -120,7 +125,7 @@ const Cart = () => {
         </div>
         <div className="line_cart"></div>
 
-        <div className="flex_wrap carts_mobilini">{carts}</div>
+        <div className="flex_wrap carts_mobilini">{carts.length > 0 ? carts : <div className='empty'><img src={empty} alt="" /></div>}</div>
 
         <div className="total_big">
           <form className="form_cupon">
